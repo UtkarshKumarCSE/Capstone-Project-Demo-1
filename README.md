@@ -1,72 +1,58 @@
-# Capstone-Project-Demo-1
-Energy-Efficient Multi-Objective Task Scheduling using Improved Particle Swarm Optimization (IMPSO) — interactive demo and capstone development.
+# Capstone Project — IMPSO Cloud Task Scheduler
 
-# Energy-Efficient Multi-Objective Task Scheduling using IMPSO
+**Project title:** Energy-Efficient Multi-Objective Task Scheduling using Improved Particle Swarm Optimization (IMPSO)
 
-A B.Tech CSE capstone project exploring energy-efficient task scheduling in cloud computing using an Improved Multi-Objective Particle Swarm Optimization (IMPSO) approach.
+A B.Tech capstone project exploring cloud task scheduling across heterogeneous virtual machines.
 
-## Project Overview
+## Live demo
 
-Cloud data centers execute tasks across virtual machines (VMs). Poor scheduling can increase energy consumption, completion time, and uneven resource utilization.
+Once GitHub Pages is enabled, the interactive dashboard will be published at:
 
-The objective of this project is to develop and evaluate a scheduling approach that considers three objectives:
-- Minimize energy consumption
-- Minimize makespan (total completion time)
-- Minimize load imbalance across VMs
+**https://utkarshkumarcse.github.io/Capstone-Project-Demo-1/**
 
-## Current Demo
-
-The repository's initial browser-based prototype provides:
-- A configurable synthetic task workload
-- Heterogeneous VM specifications
-- A simplified scheduling demonstration
-- A comparison with a Round Robin baseline
-- A results table and visual comparison
-- CSV export
-
-### Run the HTML Demo
+## Run locally
 
 1. Download or clone this repository.
 2. Open `index.html` in a modern browser.
-3. Choose a task count and parameters.
+3. Choose a workload size, search population, iteration count, and random seed.
 4. Click **Run demo simulation**.
-5. Click **Export results as CSV** to save the demo output.
+5. Click **Export results as CSV** to save the output.
 
 No Java installation is required for this browser-based demo.
 
-## Planned Implementation
+## What the demo currently shows
 
-The intended capstone implementation follows the project report:
-- Java and CloudSim 3.0 simulation environment
-- Heterogeneous hosts and virtual machines
-- Adaptive inertia weight
-- Pareto-based archive and leader selection
-- Energy, makespan, and load-imbalance evaluation
-- Comparison with baseline scheduling algorithms
-- Workload testing from 50 to 1,000 tasks
-- Experiment results, charts, and analysis
+- Synthetic independent tasks
+- Heterogeneous virtual-machine profiles
+- Round Robin baseline comparison
+- A simplified discrete search heuristic
+- Estimated energy, makespan, and load imbalance
+- VM load table and CSV export
 
-## Current Status
+## Important status note
 
-The HTML dashboard is an educational prototype using a simplified discrete search procedure. It is **not yet the canonical IMPSO implementation and does not produce CloudSim simulation results**. Results must not be treated as validated research findings.
+This browser dashboard is an **educational prototype using a simplified search heuristic**. It is not yet the canonical IMPSO algorithm and does not use CloudSim. Its numbers are estimates from the simplified model and must not be presented as validated research results.
 
-The Java/CloudSim implementation and experimental validation are planned next steps.
+## Planned capstone implementation
+
+The intended research implementation will use Java and CloudSim 3.0 and work toward the features in the approved project report:
+
+- Non-linear adaptive inertia weight
+- Pareto archive and diversity-aware leader selection
+- Energy, makespan, and load-imbalance objectives
+- DVFS-aware energy modelling with documented assumptions
+- Baseline scheduling algorithms and workloads from 50 to 1,000 tasks
+- Reproducible experiments, charts, and results analysis
+
+## Team
+
+- Utkarsh Kumar
+- Gagan Tiwari
 
 ## Technology
 
 - HTML, CSS, JavaScript — interactive demo
-- Java — planned scheduling implementation
-- CloudSim 3.0 — planned cloud simulation framework
-
-## Academic Project
-
-B.Tech Capstone Project  
-**Title:** Energy-Efficient Multi-Objective Task Scheduling using Improved Particle Swarm Optimization (IMPSO)
-
-## Contributors
-
-- Utkarsh Kumar
-- Gagan Tiwari
+- Java + CloudSim 3.0 — planned simulator implementation
 
 ## License
 
